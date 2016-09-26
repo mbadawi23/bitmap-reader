@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 
 namespace BitmapByteReader
 {
@@ -10,6 +11,9 @@ namespace BitmapByteReader
     {
         static void Main(string[] args)
         {
+            Image image = Image.FromFile(@"C:\MyWorkspace\media\dotmatrix.bmp");
+
+            byte[] bytes = BitmapReader.ImageToByte(image);
         }
     }
 }
